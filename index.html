@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikas Digital Hub</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+}
+
+nav {
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-box {
+  max-width: 550px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero h1 span {
+  color: #60a5fa;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  background: white;
+  color: #1e3a8a;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#message {
+  margin-top: 25px;
+}
+
+.services,
+.projects,
+.contact {
+  background: rgba(0,0,0,0.15);
+}
+
+.service-box,
+.project-box,
+.contact-box {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+}
+
+.service-box h3,
+.project-box h3 {
+  font-size: 22px;
+}
+
+.service-box p,
+.project-box p,
+.contact-box p {
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.project-box button {
+  margin-top: 10px;
+  padding: 10px 22px;
+  font-size: 15px;
+}
+
+.contact-box a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 13px 25px;
+  border-radius: 25px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+Vikas Digital Hub 💻
+</nav>
+
+<section class="hero">
+
+<div class="hero-box">
+
+<h1>Welcome to <span>Vikas Digital Hub</span></h1>
+
+<p>
+We create simple, modern and mobile-friendly websites
+for people and small businesses.
+</p>
+
+<button onclick="showMessage()">Get Started 🚀</button>
+
+<h3 id="message"></h3>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2>Our Services 🛠️</h2>
+
+<div class="service-box">
+<h3>🌐 Website Design</h3>
+<p>
+Modern and mobile-friendly websites for small businesses and personal use.
+</p>
+</div>
+
+<div class="service-box">
+<h3>🎨 Landing Pages</h3>
+<p>
+Clean and attractive landing pages for products, services and businesses.
+</p>
+</div>
+
+<div class="service-box">
+<h3>⚡ Basic JavaScript</h3>
+<p>
+Interactive buttons and simple website features using JavaScript.
+</p>
+</div>
+
+</section>
+
+<section class="projects">
+
+<h2>My Projects 🚀</h2>
+
+<div class="project-box">
+<h3>🌐 My First Website</h3>
+<p>
+My first website created using HTML, CSS and JavaScript.
+</p>
+<button onclick="projectMessage('First Website')">
+View Project
+</button>
+</div>
+
+<div class="project-box">
+<h3>🎨 Landing Page</h3>
+<p>
+A modern landing page designed for mobile users.
+</p>
+<button onclick="projectMessage('Landing Page')">
+View Project
+</button>
+</div>
+
+<div class="project-box">
+<h3>⚡ JavaScript Project</h3>
+<p>
+An interactive project using basic JavaScript.
+</p>
+<button onclick="projectMessage('JavaScript Project')">
+View Project
+</button>
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Me 📞</h2>
+
+<div class="contact-box">
+
+<p>
+Interested in a website? Get in touch with me!
+</p>
+
+<a href="https://wa.me/919999999999">
+WhatsApp Me 💬
+</a>
+
+</div>
+
+</section>
+
+<script>
+
+function showMessage() {
+  document.getElementById("message").innerText =
+  "Let's build something amazing! 🔥";
+}
+
+function projectMessage(name) {
+  alert(name + " — Project coming soon! 🚀");
+}
+
+</script>
+
+</body>
+</html>
